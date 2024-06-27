@@ -1,0 +1,61 @@
+#root {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgb(23, 143, 242), rgb(27, 255, 103));
+}
+
+.calculator {
+  height: 58vh;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #333;
+}
+
+form input  {
+  border: none;
+  outline: none;
+  width: 60px;
+  font-size: 16px;
+  background-color: rgb(136, 136, 179);
+  margin: 2px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+form input[type="button"] {
+  height: 40px;
+  margin: 5px;
+}
+
+form input[type="button"]:hover {
+  background-color: rgb(93, 77, 108);
+  transition: 0.2s ease;
+}
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 0px 15px 0px;
+}
+
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 40px;
+  padding: 5px 10px;
+  background-color: rgba(175, 175, 175, 0.5);
+  margin-bottom: 15px;
+}
+
+form input.equal {
+  width: 130px;
+}
